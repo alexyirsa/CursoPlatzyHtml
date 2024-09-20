@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            font-size: 20px;
+            color: lime;
+            text-decoration: underline;
+        }
+        div > div{
+            background: red;
+        }
+        .es{
+            background: green;
+        }
+        div + section{ 
+            background: purple;
+        }
+        div ~ p{
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Platzi</p>
+            <p>Es</p>
+            <p>Increíble</p>
+            <div class="es">Otro dentro</div>
+        </div>
+    </div>
+    <p>Clase de selectores</p>
+    <section>
+        Es lo mejor
+    </section>
+    <div>
+        Master
+    </div>
+    
+</body>
+</html>

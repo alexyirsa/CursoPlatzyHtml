@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            color: red;
+        }
+        p::before{
+            content: "��";
+        }
+        p::after{
+            content: "";
+        }
+    
+        p {
+            font-size: 24px;
+            color: blue;
+            text-align: center;
+            background-color: yellow;
+            padding: 20px;
+        }
+        p:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        p:first-child {
+            font-weight: bold;
+        }
+        p:nth-child(2) {
+            font-style: italic;
+        }
+        p:last-child {
+            font-family: Arial, sans-serif;
+        }
+        p:nth-of-type(3) {
+            background-color: green;
+        }
+        p:nth-of-type(even) {
+            color: white;
+        }
+        p:nth-of-type(odd) {
+            background-color: lightgray;
+        }
+        p:not(.inactive) {
+            text-decoration: none;
+        }
+        ::placeholder{
+            color: gray;
+        }
+       
+    </style> 
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
